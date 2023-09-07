@@ -8,8 +8,8 @@ import zipfile
 
 # open zipped file
 
-# with zipfile.ZipFile('data/winemag-data-130k-v2.csv.zip', 'r') as zip_ref:
-#     zip_ref.extract('winemag-data-130k-v2.csv', 'data')
+with zipfile.ZipFile('data/winemag-data-130k-v2.csv.zip', 'r') as zip_ref:
+    zip_ref.extract('winemag-data-130k-v2.csv', 'data')
 
 df = pd.read_csv('data/winemag-data-130k-v2.csv', index_col=0)
 
